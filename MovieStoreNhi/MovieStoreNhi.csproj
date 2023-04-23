@@ -1,0 +1,58 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Data\" />
+    <None Remove="Data\Enums\" />
+    <None Remove="Data\Static\" />
+    <None Remove="Views\Actor\" />
+    <None Remove="Views\Cinemas\" />
+    <None Remove="Views\Producers\" />
+    <None Remove="Views\Movies\" />
+    <None Remove="Data\Services\" />
+    <None Remove="Data\Base\" />
+    <None Remove="Data\Cart\" />
+    <None Remove="Data\ViewComponents\" />
+    <None Remove="Data\ViewModels\" />
+    <None Remove="Views\Shared\Components\" />
+    <None Remove="Views\Account\" />
+    <None Remove="Views\Orders\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\" />
+    <Folder Include="Data\Enums\" />
+    <Folder Include="Data\Static\" />
+    <Folder Include="Views\Actors\" />
+    <Folder Include="Views\Cinemas\" />
+    <Folder Include="Views\Producers\" />
+    <Folder Include="Views\Movies\" />
+    <Folder Include="Data\Services\" />
+    <Folder Include="Data\Base\" />
+    <Folder Include="Data\Cart\" />
+    <Folder Include="Data\ViewComponents\" />
+    <Folder Include="Data\ViewModels\" />
+    <Folder Include="Views\Shared\Components\" />
+    <Folder Include="wwwroot\images\" />
+    <Folder Include="Views\Account\" />
+    <Folder Include="Views\Orders\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.5">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.13" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.15" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.6" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\images\" />
+  </ItemGroup>
+</Project>
